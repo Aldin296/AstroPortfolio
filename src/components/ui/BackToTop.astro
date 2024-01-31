@@ -39,7 +39,7 @@
 
 	mybutton.addEventListener('click', backToTop);
 
-	function backToTop(event: { preventDefault: () => void; }) {
+	function backToTop(event: Event) {
 		event.preventDefault();
 		document.body.scrollTop = 0;
 		document.documentElement.scrollTop = 0;
